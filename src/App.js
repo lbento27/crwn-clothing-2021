@@ -37,7 +37,7 @@ class App extends React.Component {
             //snapshot is a method in fireStore that gives us some property´s to get that reference "store" data we use .data() o that snapshot
             currentUser: { id: snapshot.id, ...snapshot.data() },
           });
-          console.log(this.state);
+          //console.log(this.state);
         });
       } else {
         this.setState({ currentUser: userAuth }); //same as currentUser = null, if logs out
